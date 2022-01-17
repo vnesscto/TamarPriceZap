@@ -1,0 +1,41 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+ 
+
+ 
+
+<!-- TestNG Documentation: http://testng.org/doc/documentation-main.html -->
+
+ 
+
+<!-- Change "false" to "tests", "methods", "classes" or "instances" for running
+
+     in parallel. See more details in the TestNG documentation. -->
+
+ 
+
+<suite name="GE" parallel="false" verbose="2" thread-count="10">
+ <parameter name="subCategory" value="comp" />
+	<parameter name="category" value="mouse" />
+     <test name="zap1">
+       <classes>
+     <class  name="com.Zap.GE.Test.Test1">
+                     <methods>
+
+                           <include name="zaptest"></include>
+
+                     </methods>
+
+                </class>
+
+               
+
+ 
+
+           </classes>
+
+ 
+
+     </test>
+</suite>
